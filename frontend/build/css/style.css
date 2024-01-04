@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #F0F3FF;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* body .card {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 70%;
+  border: 8px solid #DFE7FF;
+  padding: 2em;
+  border-radius: 30px;
+  margin-top: 6em;
+}
+@media screen and (max-width: 768px) {
+  * body .card {
+    width: 100%;
+  }
+}
+* body .card .logo {
+  display: flex;
+  align-items: center;
+}
+* body .card .logo .img-logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+* body .card .logo .text-logo {
+  color: #0016FF;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+* body .card h1 {
+  font-size: 1em;
+  margin-top: 2em;
+}
+* body .card .suggestion {
+  background-color: #F3F3F3;
+  display: flex;
+  align-items: center;
+  padding: 2em;
+  margin-top: 1em;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  * body .card .suggestion {
+    align-items: normal;
+  }
+}
+* body .card .suggestion .icon-suggestion {
+  margin-right: 10px;
+}
+* body .card .suggestion .text-suggestion p {
+  font-size: 14px;
+}
+* body .card .tchat {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+* body .card .tchat .input-tchat {
+  width: 100%;
+}
+* body .card .tchat .input-tchat input {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-family: "Ubuntu", sans-serif;
+}
+* body .card .tchat .input-tchat input::placeholder {
+  color: #d6d6d6;
+}
+* body .card .tchat .img-tchat {
+  width: 5%;
+}
+@media screen and (max-width: 768px) {
+  * body .card .tchat .img-tchat {
+    width: 15%;
+  }
+}
+* body .card .tchat .img-tchat img {
+  width: 25px;
+  cursor: pointer;
+}
+* body .card #tchat-response {
+  margin-top: 2em;
+  background-color: #F0F3FF;
+  border: 1px solid #0016FF;
+  border-radius: 5px;
+  padding: 2em;
+  line-height: 30px;
+  font-weight: 200;
+}
+
+/*# sourceMappingURL=style.css.map */

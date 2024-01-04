@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+$background: #F0F3FF;
+$border: #DFE7FF;
+$accent: #0016FF;
+$rectangle: #F3F3F3;
+$input: #d6d6d6;
+$white: #fff;
+$font: 'Ubuntu', sans-serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {
+        font-family: $font;
+        background-color: $background;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .card {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            background-color: $white;
+            width: 70%;
+            border: 8px solid $border;
+            padding: 2em;
+            border-radius: 30px;
+            margin-top: 6em;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            .logo {
+                display: flex;
+                align-items: center;
+
+                .img-logo img {
+                    width: 30px;
+                    margin-right: 10px;
+                }
+
+                .text-logo {
+                    color: $accent;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+
+            h1 {
+                font-size: 1em;
+                margin-top: 2em;
+            }
+
+            .suggestion {
+                background-color: $rectangle;
+                display: flex;
+                align-items: center;
+                padding: 2em;
+                margin-top: 1em;
+                border-radius: 5px;
+
+                @media screen and (max-width: 768px) {
+                    align-items: normal;
+                }
+
+                .icon-suggestion {
+                    margin-right: 10px;
+                }
+
+                .text-suggestion {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .tchat {
+                display: flex;
+                align-items: center;
+                margin-top: 2em;
+                border: 1px solid $input;
+                border-radius: 5px;
+                padding: 10px 0;
+
+                .input-tchat {
+                    width: 100%;
+                    input {
+                        width: 90%;
+                        padding: 10px;
+                        border: none;
+                        outline: none;
+                        font-family: $font;
+                    }
+    
+                    input::placeholder {
+                        color: $input;
+                    }
+                }
+
+                .img-tchat {
+                    width: 5%;
+
+                    @media screen and (max-width: 768px) {
+                        width: 15%;
+                    }
+
+                    img {
+                        width: 25px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            #tchat-response {
+                margin-top: 2em;
+                background-color: $background;
+                border: 1px solid $accent;
+                border-radius: 5px;
+                padding: 2em;
+                line-height: 30px;
+                font-weight: 200;
+            }
+
+            
+        }
+    }
+
+}
